@@ -3,9 +3,9 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Marketing_Automation-11_yrs-22e4ff?style=for-the-badge&labelColor=0b1330" alt="Marketing automation, 11 years"/>
-  <img src="https://img.shields.io/badge/Data_Science-U_of_T_·_4.0_GPA-7c5cff?style=for-the-badge&labelColor=0b1330" alt="Data science, U of T, 4.0 GPA"/>
-  <img src="https://img.shields.io/badge/Now_building-EXIOS-ff3fd4?style=for-the-badge&labelColor=0b1330" alt="Now building EXIOS"/>
+  <img src="https://img.shields.io/badge/Marketing_Automation-11_yrs-4cc9f0?style=for-the-badge&labelColor=060b18" alt="Marketing automation, 11 years"/>
+  <img src="https://img.shields.io/badge/Data_Science-U_of_T_·_4.0_GPA-2b6cb0?style=for-the-badge&labelColor=060b18" alt="Data science, U of T, 4.0 GPA"/>
+  <img src="https://img.shields.io/badge/Now_building-EXIOS-ff8a3d?style=for-the-badge&labelColor=060b18" alt="Now building EXIOS"/>
 </p>
 
 ### `> whoami`
