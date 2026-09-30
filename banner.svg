@@ -1,88 +1,131 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 320" width="1280" height="320" role="img" aria-label="Ketan Khanna: Marketing Automation, Advertising Operations, Data Science">
   <defs>
-    <radialGradient id="space" cx="70%" cy="10%" r="90%">
-      <stop offset="0" stop-color="#0d1a33"/>
-      <stop offset=".55" stop-color="#060b18"/>
-      <stop offset="1" stop-color="#02040a"/>
+    <radialGradient id="space" cx="60%" cy="0%" r="100%">
+      <stop offset="0" stop-color="#10284d"/>
+      <stop offset=".5" stop-color="#071228"/>
+      <stop offset="1" stop-color="#030712"/>
     </radialGradient>
     <radialGradient id="planet" cx="50%" cy="0%" r="100%">
-      <stop offset="0" stop-color="#1a3a66"/>
-      <stop offset=".6" stop-color="#0a1830"/>
-      <stop offset="1" stop-color="#040913"/>
+      <stop offset="0" stop-color="#2a5d93"/>
+      <stop offset=".45" stop-color="#11315c"/>
+      <stop offset="1" stop-color="#050c1c"/>
     </radialGradient>
     <linearGradient id="rim" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#4cc9f0" stop-opacity="0"/>
-      <stop offset=".35" stop-color="#4cc9f0"/>
-      <stop offset=".62" stop-color="#ff8a3d"/>
-      <stop offset="1" stop-color="#ff8a3d" stop-opacity="0"/>
+      <stop offset="0" stop-color="#8fe3ff" stop-opacity="0"/>
+      <stop offset=".3" stop-color="#8fe3ff"/>
+      <stop offset=".55" stop-color="#ffffff"/>
+      <stop offset=".75" stop-color="#ffb27a"/>
+      <stop offset="1" stop-color="#ffb27a" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#e8f4ff"/>
-      <stop offset="1" stop-color="#9fdcff"/>
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset=".5" stop-color="#dff6ff"/>
+      <stop offset="1" stop-color="#a8e6ff"/>
     </linearGradient>
+    <linearGradient id="aurora" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5ee7ff" stop-opacity="0"/>
+      <stop offset=".3" stop-color="#5ee7ff" stop-opacity=".55"/>
+      <stop offset=".6" stop-color="#7fb8ff" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#b9f3ff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="bloom" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#bff0ff" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#bff0ff" stop-opacity="0"/>
+    </radialGradient>
     <filter id="glow" x="-20%" y="-60%" width="140%" height="220%">
       <feGaussianBlur stdDeviation="3.5" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <filter id="soft"><feGaussianBlur stdDeviation="18"/></filter>
+    <filter id="soft" x="-30%" y="-300%" width="160%" height="700%"><feGaussianBlur stdDeviation="16"/></filter>
+    <filter id="softer" x="-50%" y="-200%" width="200%" height="500%"><feGaussianBlur stdDeviation="30"/></filter>
     <style>
-      .star { fill:#dbeaff; animation: tw 4s ease-in-out infinite; }
+      .star { fill:#e8f4ff; animation: tw 4s ease-in-out infinite; }
       .s2 { animation-delay:1.3s; } .s3 { animation-delay:2.6s; }
-      @keyframes tw { 0%,100% { opacity:.25 } 50% { opacity:.95 } }
+      @keyframes tw { 0%,100% { opacity:.25 } 50% { opacity:1 } }
+      .spark { fill:#ffffff; animation: sp 3.2s ease-in-out infinite; }
+      .k2 { animation-delay:1.1s; } .k3 { animation-delay:2.1s; }
+      @keyframes sp { 0%,100% { opacity:0; transform: scale(.6) } 50% { opacity:1; transform: scale(1) } }
+      .aur { animation: drift 12s ease-in-out infinite alternate; }
+      .aur2 { animation: drift 16s ease-in-out infinite alternate-reverse; }
+      @keyframes drift { from { transform: translateX(-30px) } to { transform: translateX(30px) } }
       .name { font: 700 58px 'Segoe UI','Helvetica Neue',Arial,sans-serif; letter-spacing:12px; }
-      .tag { font: 600 17px 'Consolas','Courier New',monospace; fill:#9fc3e0; letter-spacing:3px; }
+      .tag { font: 600 17px 'Consolas','Courier New',monospace; fill:#bfe2f7; letter-spacing:3px; }
       .hud { font: 600 11px 'Consolas','Courier New',monospace; letter-spacing:2px; }
-      .scan { fill:#4cc9f0; opacity:.05; animation: scan 7s linear infinite; }
-      @keyframes scan { from { transform: translateY(-40px) } to { transform: translateY(330px) } }
-      .pulse { animation: pu 3s ease-in-out infinite; transform-origin: 1110px 96px; }
-      @keyframes pu { 0%,100% { opacity:.55 } 50% { opacity:1 } }
+      .shine { animation: shine 6s ease-in-out infinite; }
+      @keyframes shine { 0%,70%,100% { opacity:0 } 80% { opacity:.9 } }
+      .pulse { animation: pu 3s ease-in-out infinite; }
+      @keyframes pu { 0%,100% { opacity:.6 } 50% { opacity:1 } }
     </style>
   </defs>
 
   <rect width="1280" height="320" fill="url(#space)"/>
 
-  <!-- nebula wash -->
-  <ellipse cx="1040" cy="70" rx="260" ry="90" fill="#1f5aa0" opacity=".22" filter="url(#soft)"/>
-  <ellipse cx="220" cy="60" rx="220" ry="70" fill="#ff8a3d" opacity=".08" filter="url(#soft)"/>
+  <!-- luminous nebulae -->
+  <ellipse cx="1030" cy="80" rx="300" ry="110" fill="#3b8fe0" opacity=".30" filter="url(#softer)"/>
+  <ellipse cx="260" cy="70" rx="260" ry="90" fill="#5ee7ff" opacity=".16" filter="url(#softer)"/>
+  <ellipse cx="640" cy="40" rx="220" ry="60" fill="#9fd6ff" opacity=".12" filter="url(#softer)"/>
+  <ellipse cx="190" cy="120" rx="120" ry="40" fill="#ffb27a" opacity=".07" filter="url(#softer)"/>
 
-  <!-- stars -->
+  <!-- aurora ribbons -->
+  <g class="aur" filter="url(#soft)">
+    <path d="M -40 150 C 200 90, 420 170, 640 120 S 1080 80, 1320 140" fill="none" stroke="url(#aurora)" stroke-width="26"/>
+  </g>
+  <g class="aur2" filter="url(#soft)" opacity=".7">
+    <path d="M -40 190 C 240 150, 470 210, 700 170 S 1100 140, 1320 190" fill="none" stroke="url(#aurora)" stroke-width="16"/>
+  </g>
+
+  <!-- stars (dense, varied) -->
   <g>
-    <circle class="star" cx="62" cy="38" r="1.3"/><circle class="star s2" cx="148" cy="92" r="1"/>
-    <circle class="star s3" cx="276" cy="28" r="1.5"/><circle class="star" cx="402" cy="64" r="1"/>
-    <circle class="star s2" cx="520" cy="22" r="1.2"/><circle class="star s3" cx="690" cy="48" r="1"/>
-    <circle class="star" cx="820" cy="30" r="1.4"/><circle class="star s2" cx="930" cy="112" r="1"/>
-    <circle class="star s3" cx="1210" cy="40" r="1.3"/><circle class="star" cx="1244" cy="150" r="1"/>
-    <circle class="star s2" cx="34" cy="160" r="1"/><circle class="star s3" cx="610" cy="120" r="1"/>
+    <circle class="star" cx="42" cy="30" r="1.2"/><circle class="star s2" cx="98" cy="84" r=".9"/><circle class="star s3" cx="150" cy="44" r="1.4"/>
+    <circle class="star" cx="212" cy="112" r=".8"/><circle class="star s2" cx="276" cy="26" r="1.5"/><circle class="star s3" cx="330" cy="70" r="1"/>
+    <circle class="star" cx="402" cy="40" r="1.1"/><circle class="star s2" cx="455" cy="96" r=".8"/><circle class="star s3" cx="520" cy="22" r="1.3"/>
+    <circle class="star" cx="585" cy="68" r=".9"/><circle class="star s2" cx="690" cy="34" r="1"/><circle class="star s3" cx="742" cy="92" r=".8"/>
+    <circle class="star" cx="820" cy="28" r="1.4"/><circle class="star s2" cx="872" cy="70" r=".9"/><circle class="star s3" cx="930" cy="118" r="1"/>
+    <circle class="star" cx="985" cy="40" r="1.1"/><circle class="star s2" cx="1160" cy="30" r="1.3"/><circle class="star s3" cx="1210" cy="88" r=".9"/>
+    <circle class="star" cx="1250" cy="150" r="1"/><circle class="star s2" cx="30" cy="170" r=".9"/><circle class="star s3" cx="610" cy="126" r="1"/>
+    <circle class="star" cx="360" cy="140" r=".8"/><circle class="star s2" cx="905" cy="160" r=".8"/><circle class="star s3" cx="1180" cy="190" r=".8"/>
   </g>
 
-  <!-- distant blue crystal (EXIOS nod) -->
+  <!-- four-point sparkles -->
+  <g filter="url(#glow)">
+    <path class="spark" d="M300 58 l3 9 l9 3 l-9 3 l-3 9 l-3 -9 l-9 -3 l9 -3 z" style="transform-origin:300px 70px"/>
+    <path class="spark k2" d="M960 52 l2.5 7 l7 2.5 l-7 2.5 l-2.5 7 l-2.5 -7 l-7 -2.5 l7 -2.5 z" style="transform-origin:960px 61px"/>
+    <path class="spark k3" d="M180 176 l2 6 l6 2 l-6 2 l-2 6 l-2 -6 l-6 -2 l6 -2 z" style="transform-origin:180px 184px"/>
+    <path class="spark" d="M1190 132 l2 6 l6 2 l-6 2 l-2 6 l-2 -6 l-6 -2 l6 -2 z" style="transform-origin:1190px 140px"/>
+  </g>
+
+  <!-- the blue crystal, glowing -->
+  <ellipse cx="1110" cy="96" rx="70" ry="70" fill="url(#bloom)"/>
   <g class="pulse" filter="url(#glow)">
-    <polygon points="1110,58 1128,96 1110,138 1092,96" fill="#4cc9f0" opacity=".35"/>
-    <polygon points="1110,58 1128,96 1110,104" fill="#bfeaff" opacity=".6"/>
+    <polygon points="1110,54 1131,96 1110,142 1089,96" fill="#5ee7ff" opacity=".45"/>
+    <polygon points="1110,54 1131,96 1110,104" fill="#e6fbff" opacity=".85"/>
+    <polygon points="1089,96 1110,104 1110,142" fill="#2a8fd0" opacity=".55"/>
   </g>
 
-  <!-- planet horizon -->
+  <!-- planet horizon with atmosphere -->
   <ellipse cx="640" cy="620" rx="900" ry="380" fill="url(#planet)"/>
-  <path d="M -260 262 Q 640 216 1540 262" fill="none" stroke="url(#rim)" stroke-width="2.5" filter="url(#glow)"/>
-  <!-- city lights on the planet -->
-  <g fill="#ff8a3d" opacity=".55">
+  <ellipse cx="640" cy="250" rx="720" ry="28" fill="#8fe3ff" opacity=".18" filter="url(#soft)"/>
+  <path d="M -260 262 Q 640 216 1540 262" fill="none" stroke="url(#rim)" stroke-width="3" filter="url(#glow)"/>
+  <!-- sunrise glint on the horizon -->
+  <ellipse cx="820" cy="240" rx="130" ry="10" fill="#ffffff" opacity=".35" filter="url(#soft)"/>
+  <ellipse cx="820" cy="240" rx="8" ry="8" fill="#ffffff" class="shine" filter="url(#glow)"/>
+  <g fill="#ffb27a" opacity=".6">
     <circle cx="470" cy="276" r="1.4"/><circle cx="488" cy="281" r="1"/><circle cx="505" cy="274" r="1.2"/>
     <circle cx="760" cy="279" r="1.3"/><circle cx="778" cy="284" r="1"/><circle cx="802" cy="276" r="1.1"/>
   </g>
 
   <!-- HUD frame -->
-  <g stroke="#4cc9f0" stroke-width="2" fill="none" opacity=".75">
+  <g stroke="#8fe3ff" stroke-width="2" fill="none" opacity=".8">
     <path d="M24 46 V24 H64"/><path d="M1216 24 H1256 V46"/>
     <path d="M24 274 V296 H64"/><path d="M1216 296 H1256 V274"/>
   </g>
-  <text x="74" y="36" class="hud" fill="#4cc9f0" opacity=".8">SYS // KK-01 · ONLINE</text>
-  <text x="1206" y="36" class="hud" fill="#ff8a3d" opacity=".85" text-anchor="end">TORONTO · 43.65°N 79.38°W</text>
-  <text x="74" y="292" class="hud" fill="#6f8bab" opacity=".8">MARKETING AUTOMATION · ADVERTISING OPERATIONS · DATA SCIENCE</text>
+  <text x="74" y="36" class="hud" fill="#8fe3ff" opacity=".85">SYS // KK-01 · ONLINE</text>
+  <text x="1206" y="36" class="hud" fill="#ffb27a" opacity=".9" text-anchor="end">TORONTO · 43.65°N 79.38°W</text>
+  <text x="74" y="292" class="hud" fill="#8fb4d4" opacity=".85">MARKETING AUTOMATION · ADVERTISING OPERATIONS · DATA SCIENCE</text>
 
-  <!-- name -->
+  <!-- title with soft halo -->
+  <ellipse cx="640" cy="118" rx="330" ry="46" fill="#7fd4ff" opacity=".12" filter="url(#softer)"/>
   <text x="640" y="132" text-anchor="middle" class="name" fill="url(#title)" filter="url(#glow)">KETAN KHANNA</text>
   <line x1="470" y1="152" x2="810" y2="152" stroke="url(#rim)" stroke-width="2"/>
   <text x="640" y="184" text-anchor="middle" class="tag">CAMPAIGNS THAT LAND · DATA THAT EXPLAINS WHY</text>
-
-  <rect class="scan" x="0" y="0" width="1280" height="32"/>
 </svg>
