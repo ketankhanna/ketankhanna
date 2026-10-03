@@ -4,13 +4,14 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Marketing_Automation-11_yrs-4cc9f0?style=for-the-badge&labelColor=060b18" alt="Marketing automation, 11 years"/>
+  <img src="https://img.shields.io/badge/Advertising_Operations-Retail_media_·_Digital-8a5cf6?style=for-the-badge&labelColor=060b18" alt="Advertising Operations"/>
   <img src="https://img.shields.io/badge/Data_Science-U_of_T_·_4.0_GPA-2b6cb0?style=for-the-badge&labelColor=060b18" alt="Data science, U of T, 4.0 GPA"/>
   <img src="https://img.shields.io/badge/Now_building-EXIOS-ff8a3d?style=for-the-badge&labelColor=060b18" alt="Now building EXIOS"/>
 </p>
 
 ### `> whoami`
 
-Marketing technologist with 11 years in email and lifecycle marketing across financial services, retail media, automotive and telecom. I build and deploy campaigns in **Adobe Campaign** and manage advertising operations platforms.
+Marketing technologist with 11 years across **Advertising Operations** and email and lifecycle marketing. On the advertising side I ran retail media and digital ad operations at scale: over 1,000 campaigns and $20MM in managed spend across retail media, automotive and media. Today I build and deploy campaigns in **Adobe Campaign**.
 
 I completed certificates in **Data Science** and **Artificial Intelligence** at the University of Toronto (4.0 GPA in both) to understand the data behind every campaign, not just deliver it.
 
@@ -22,7 +23,7 @@ I'm also the founder of **Cinderhawk Games**, where I'm directing **EXIOS**: a s
 
 | | Project | What it shows |
 |---|---|---|
-| 📬 | **[email-campaign-analytics](https://github.com/ketankhanna/email-campaign-analytics)** | Campaign scorecards, year-over-year trends, EN/FR split and A/B tests with proper significance testing |
+| 📬 | **[email-campaign-analytics](https://github.com/ketankhanna/email-campaign-analytics)** | Campaign scorecards, year-over-year trends, language splits and A/B tests with proper significance testing |
 | 🚦 | **[toronto-collision-severity](https://github.com/ketankhanna/toronto-collision-severity)** | Nine ML models and grid-search tuning on Toronto Police collision data (team project) |
 | 🐍 | **[snake-dqn-agent](https://github.com/ketankhanna/snake-dqn-agent)** | A deep Q-learning agent that teaches itself to play Snake |
 | 🦷 | **[dental-xray-classifier](https://github.com/ketankhanna/dental-xray-classifier)** | ResNet50 and VGG16 transfer learning vs a custom CNN on dental X-rays, and why the small model won (team project) |
