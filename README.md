@@ -11,7 +11,7 @@
 
 ### `> whoami`
 
-Marketing technologist with 11 years across **Advertising Operations** and email and lifecycle marketing. On the advertising side I ran retail media and digital ad operations at scale: over 1,000 campaigns and $20MM in managed spend across retail media, automotive and media. Today I build and deploy campaigns in **Adobe Campaign**.
+Marketing technologist with 11 years across **Advertising Operations** and email and lifecycle marketing. On the advertising side I ran retail media and digital ad operations at scale: over 1,000 campaigns and $20MM in managed spend across retail media, automotive and media. Today I build and deploy campaigns in **Adobe Campaign** in financial services.
 
 I completed certificates in **Data Science** and **Artificial Intelligence** at the University of Toronto (4.0 GPA in both) to understand the data behind every campaign, not just deliver it.
 
